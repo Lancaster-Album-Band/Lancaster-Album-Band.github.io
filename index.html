@@ -9,27 +9,16 @@
         <link rel="icon" href="favicon.png">
         <meta name="theme-color" content="#0f1f31">
         <style>
-            /* html, body {
-                height: 100%;
-            }
-
             html {
                 display: table;
                 margin: auto;
+                font-family: Arial, Helvetica, sans-serif;
             }
 
             body {
                 display: table-cell;
                 vertical-align: middle;
-            } */
-
-            h1 {text-align: center;}
-            p {text-align: center;}
-            div {text-align: center;}
-            img {text-align: center;}
-            header {text-align: center;}
-            iframe {text-align: center;}
-            section {text-align: center;}
+            }
 
             .header-image {
                 max-width: 100%;
@@ -37,18 +26,27 @@
             }
             
             .youtube-section {
-                max-width: 800px; /* you have to have a size or this method doesn't work */
-                height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
-
-                /*position: absolute;  positions out of the flow, but according to the nearest parent */
-                top: 0; right: 0; /* confuse it i guess */
+                max-width: 800px;
+                height: 315px;
+                position: relative;
+                /* top: 0; right: 0; */
                 bottom: 0; left: 0;
-                margin: auto; /* make em equal */
+                margin: auto;
             }
 
             .youtube-video {
                 aspect-ratio: 16 / 9;
                 width: 100%;
+            }
+
+            .contact-section {
+                max-width: 500px;
+                /* height: 315px; */
+                position: relative;
+                /* top: 0; right: 0; */
+                bottom: 0; left: 0;
+                margin: auto;
+                border: 10px;
             }
         </style>
     </head>
@@ -64,6 +62,19 @@
                     title="Bob Dylan's 'I Want You'" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
+                <section class="contact-section">
+                    <p>
+                        Formed in 2023, THE LABS are an eight-piece ensemble
+                        with a
+                        shared passion for Bob Dylan`s BLONDE ON BLONDE; we
+                        bring to
+                        the
+                        stage a detailed and soulful recreation of this 1966
+                        classic.
+                    </p>
+                    <p>For bookings and enquiries, please email Andy.</p>
+                    <p>andyraven@protonmail.com</p>
+                </section>
             </section>
         </main>
     </body>
