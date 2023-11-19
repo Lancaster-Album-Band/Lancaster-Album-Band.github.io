@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Lancaster Album Band</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="The Lancaster Album Band or The LABs are a band originating from Lancaster in the North West of the UK. They specialise in the recretion of great albums live on stage." />
-  <link rel="icon" href="favicon.png">
-  <meta name="theme-color" content="#0f1f31">
-</head>
-<body>
-  <header>
-    <h1>The Labs</h1>
-  </header>
-  <nav></nav>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. </p>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zkNO5NiqeB4?si=PfwwsL0k3BDzRdQM&amp;controls=0" title="Bob Dylan`s 'I Want You'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <main>
-    <section></section>
-    <section></section>
-    <section></section>
-  </main>
-  <footer>
-    <small>© <script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
-  </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lancaster Album Band</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="The Lancaster Album Band or The LABs are a band originating from Lancaster in the North West of the UK. They specialise in the recretion of great albums live on stage." />
+        <link rel="icon" href="favicon.png">
+        <meta name="theme-color" content="#0f1f31">
+        <style>
+            /* html, body {
+                height: 100%;
+            }
+
+            html {
+                display: table;
+                margin: auto;
+            }
+
+            body {
+                display: table-cell;
+                vertical-align: middle;
+            } */
+
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            img {text-align: center;}
+            header {text-align: center;}
+            iframe {text-align: center;}
+            section {text-align: center;}
+
+            .header-image {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            .youtube-section {
+                max-width: 800px; /* you have to have a size or this method doesn't work */
+                height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+
+                /*position: absolute;  positions out of the flow, but according to the nearest parent */
+                top: 0; right: 0; /* confuse it i guess */
+                bottom: 0; left: 0;
+                margin: auto; /* make em equal */
+            }
+
+            .youtube-video {
+                aspect-ratio: 16 / 9;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="header-image" src="the_labs.jpg" alt="The Labs" />
+        </header>
+        <nav></nav>
+        <main>
+            <section class="youtube-section">
+                <iframe class="youtube-video"
+                    src="https://www.youtube-nocookie.com/embed/zkNO5NiqeB4?si=Ez08Cisvx_SEwBht&amp;controls=0"
+                    title="Bob Dylan's 'I Want You'" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </section>
+        </main>
+    </body>
 </html>
